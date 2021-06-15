@@ -1,0 +1,11 @@
+{
+  "name": "logtools-css-productivitypack",
+  "author": "Cannibalox",
+  "version": "0.0.1",
+  "description": "kanban + eisenhower matrix css",
+  "main": "./index.html",
+  "logseq": {
+    "id": "_DuynZ2rejh_logtools",
+    "icon": "./_DuynZ2rejh.png"
+  }
+}
