@@ -238,20 +238,22 @@ a.tag[data-ref="numlist" i] {
 /* use: inline tag #kanban, #kanban-small or #kanban-wXXX    */
 /* try:  #kanban-w200,#kanban-w300, #kanban-w400             */
 
-a.tag[data-ref="🗂" i],
-a.tag[data-ref="kanban" i] {
+a.tag[data-ref="kanban" i]::before {
+  content: "🗂";
+  visibility: visible;
+}
+a.tag[data-ref="kanban-bg" i]::before {
+  content: "🗂🎨";
+  visibility: visible;
+}
+
+a.tag[data-ref="kanban"i], [data-ref="kanban-bg" i] {
   visibility: hidden;
   width: 1.5em;
   height: 1.5em;
   white-space: nowrap;
   text-shadow: var(--ct-tag-shadow);
   position: relative;
-}
-
-a.tag[data-ref="🗂" i]::before,
-a.tag[data-ref="kanban-w200" i]::before {
-  content: "🗂";
-  visibility: visible;
 }
 
    div[data-refs-self*="kanban"] > .block-children {
@@ -266,6 +268,15 @@ a.tag[data-ref="kanban-w200" i]::before {
       width: 400px;
       padding-right: 3px;
       }
+
+/* ==== BG-COLOR ==== */
+div[data-refs-self*="kanban-bg"] > .block-children {
+		padding: 0px 8px 3px 8px;
+	}
+	div[data-refs-self*="kanban-bg"] >.block-children > div {
+    	border-radius: 15px;
+		background: var(--ls-secondary-background-color);
+	}
 
    /* wide */
    div[data-refs-self*="kanban-wide"] > .block-children  {
