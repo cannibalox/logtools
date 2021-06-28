@@ -269,19 +269,12 @@ a.tag[data-ref="kanban"i], [data-ref="kanban-bg" i] {
       
     /* ===== bg-color ===== */
     div[data-refs-self*="kanban-bg"] > .block-children {
-		display: inline-flex;
-		position: relative;
-		overflow-x: auto;
-		overflow-y: hidden;
-		margin: 10px;
-		padding: 0px 8px 3px 8px;
-	}
-	div[data-refs-self*="kanban-bg"] >.block-children > div {
-    	display: inline-block;
-    	width: 400px;
+	padding: 0px 8px 3px 8px;
+    }
+    div[data-refs-self*="kanban-bg"] >.block-children > div {
     	border-radius: 15px;
-		background: var(--ls-secondary-background-color);
-	}
+	background: var(--ls-secondary-background-color);
+    }
 
    /* wide */
    div[data-refs-self*="kanban-wide"] > .block-children  {
