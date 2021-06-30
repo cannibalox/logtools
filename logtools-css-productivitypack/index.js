@@ -159,13 +159,11 @@ function main () {
 /* numbered lists 0.3 20210605 */
 /* usage : tag parent block with #numlist */
 
-a.tag[data-ref="🔢" i]::before,
 a.tag[data-ref="numlist" i]::before {
   content: "🔢";
   visibility: visible;
 }
 
-a.tag[data-ref="🔢" i],
 a.tag[data-ref="numlist" i] {
   visibility: hidden;
   width: 1.5em;
@@ -268,15 +266,6 @@ a.tag[data-ref="kanban"i], [data-ref="kanban-bg" i] {
       width: 400px;
       padding-right: 3px;
       }
-
-/* ==== BG-COLOR ==== */
-div[data-refs-self*="kanban-bg"] > .block-children {
-		padding: 0px 8px 3px 8px;
-	}
-	div[data-refs-self*="kanban-bg"] >.block-children > div {
-    	border-radius: 15px;
-		background: var(--ls-secondary-background-color);
-	}
 
    /* wide */
    div[data-refs-self*="kanban-wide"] > .block-children  {
