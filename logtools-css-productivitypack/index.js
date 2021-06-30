@@ -240,12 +240,8 @@ a.tag[data-ref="kanban" i]::before {
   content: "🗂";
   visibility: visible;
 }
-a.tag[data-ref="kanban-bg" i]::before {
-  content: "🗂🎨";
-  visibility: visible;
-}
 
-a.tag[data-ref="kanban"i], [data-ref="kanban-bg" i] {
+a.tag[data-ref="kanban"i] {
   visibility: hidden;
   width: 1.5em;
   height: 1.5em;
