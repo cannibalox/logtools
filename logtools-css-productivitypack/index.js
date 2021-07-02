@@ -159,13 +159,11 @@ function main () {
 /* numbered lists 0.3 20210605 */
 /* usage : tag parent block with #numlist */
 
-a.tag[data-ref="🔢" i]::before,
 a.tag[data-ref="numlist" i]::before {
   content: "🔢";
   visibility: visible;
 }
 
-a.tag[data-ref="🔢" i],
 a.tag[data-ref="numlist" i] {
   visibility: hidden;
   width: 1.5em;
@@ -238,20 +236,18 @@ a.tag[data-ref="numlist" i] {
 /* use: inline tag #kanban, #kanban-small or #kanban-wXXX    */
 /* try:  #kanban-w200,#kanban-w300, #kanban-w400             */
 
-a.tag[data-ref="🗂" i],
-a.tag[data-ref="kanban" i] {
+a.tag[data-ref="kanban" i]::before {
+  content: "🗂";
+  visibility: visible;
+}
+
+a.tag[data-ref="kanban"i] {
   visibility: hidden;
   width: 1.5em;
   height: 1.5em;
   white-space: nowrap;
   text-shadow: var(--ct-tag-shadow);
   position: relative;
-}
-
-a.tag[data-ref="🗂" i]::before,
-a.tag[data-ref="kanban-w200" i]::before {
-  content: "🗂";
-  visibility: visible;
 }
 
    div[data-refs-self*="kanban"] > .block-children {
