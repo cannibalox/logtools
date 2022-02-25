@@ -230,91 +230,101 @@ a.tag[data-ref="numlist" i] {
        > .ls-block  > div > div > a > .bullet-container > .bullet {
          visibility: hidden;
       }
+      
+      
+    /*===========================================================*/
+    /* css columns view ---------------------------------------- */
+    /* use: inline tag #kanban, #kanban-small or #kanban-wXXX    */
+    /* try:  #kanban-w200,#kanban-w300, #kanban-w400             */
+
+        div[data-refs-self*="kanban"]>.block-children-container.flex {
+            width: 100%;
+        }
+
+	        div[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full {
+	            display: inline-flex;
+	            position: relative;
+	            overflow-x: auto;
+	            overflow-y: hidden;
+	            margin: 0 10px;
+	        }
+
+		        div[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+		            display: inline-block;
+		            padding: 0;
+                    width: inherit;
+                    min-width: 200px;
+		            margin-right: 10px;
+       			}
+
+        /* wide */
+
+        div[data-refs-self*="kanban-small"]>.block-children-container.flex>.block-children,
+        div[data-refs-self*="kanban-wide"]>.block-children-container.flex>.block-children {
+            min-width: 90vw;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: var(--ls-primary-background-color);
+            overflow-x: scroll;
+            overflow-y: hidden;
+            margin: 10px 30px;
+        }
+
+        div[data-refs-self*="kanban-wide"]>.block-children-container.flex>.block-children>div.ls-block {
+            display: inline-block;
+            min-width: 350px;
+            padding: 13px 3px;
+            font-size: 0.85rem;
+            margin: 5px;
+            background-color: var(--ls-secondary-background-color);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
 
 
-/* css columns view for child blocks by cannibalox v20210222 */
-/* use: inline tag #kanban, #kanban-small or #kanban-wXXX    */
-/* try:  #kanban-w200,#kanban-w300, #kanban-w400             */
+        /* #kanbansmall : smaller font with hover zoom */
 
-a.tag[data-ref="kanban" i]::before {
-  content: "🗂";
-  visibility: visible;
-}
+            div[data-refs-self*="kanban-small"]>.block-children-container.flex>.block-children>div.ls-block {
+                display: inline-block;
+                min-width: 350px;
+            }
 
-a.tag[data-ref="kanban"i] {
-  visibility: hidden;
-  width: 1.5em;
-  height: 1.5em;
-  white-space: nowrap;
-  text-shadow: var(--ct-tag-shadow);
-  position: relative;
-}
+            div[data-refs-self*="kanban-small"]>.block-children-container.flex>.block-children .block-content {
+                font-size: 10px;
+                font-weight: 300;
+            }
 
-   div[data-refs-self*="kanban"] > .block-children {
-      display: inline-flex;
-      position: relative;
-      overflow-x: auto;
-      overflow-y: hidden;
-      margin: 10px;
-      }
-   div[data-refs-self*="kanban"] >.block-children > div {
-      display: inline-block;
-      width: 400px;
-      padding-right: 3px;
-      }
+            div[data-refs-self*="kanban-small"]>.block-children-container.flex>.block-children .block-content:hover {
+                font-size: 14px !important;
+                min-width: 100px;
+            }
 
-   /* wide */
-   div[data-refs-self*="kanban-wide"] > .block-children  {
-      max-width: 200vw ;
-      width: 100%;
-      min-width: 92vw;
-      left: 50%;
-      transform: translate(-50%);
-      background-color: var(--ls-secondary-background-color);
-      overflow-x: scroll;
-      overflow-y: hidden;
-      margin: 10px;
-      }
-   div[data-refs-self*="kanban-wide"] >.block-children > .ls-block {
-      display: inline-block;
-      min-width: 200px;
-      padding-right: 3px;
-      font-size: 0.85rem;
-      }
-   div[data-refs-self*="kanban-wide"] >.block-children > div {
-   border-right: 1px solid #fff;
-      }
 
-   /* #kanbansmall : smaller font with hover zoom */
-   div[data-refs-self*="kanban-small"] > .block-children .block-content {
-      font-size: 11px;
-      font-weight: 300;
-   }
-   div[data-refs-self*="kanban-small"] > .block-children .block-content:hover {
-      font-size: 14px !important;
-      min-width: 100px;
-      margin: 0 10px;
-   }
-   /* #kanban-w[100-300] : force width of the columns */
-   div[data-refs-self*="kanban-w100"] > .block-children .block-content {
-      width:100px;
-   }
-   div[data-refs-self*="kanban-w150"] > .block-children .block-content {
-      width:150px;
-   }
-   div[data-refs-self*="kanban-w200"] > .block-children .block-content {
-      width:200px;
-   }
-   div[data-refs-self*="kanban-w300"] > .block-children .block-content {
-      width:300px;
-   }
-   div[data-refs-self*="kanban-w300"] > .block-children {
-      border: 1px solid var(--ls-block-bullet-border-color);
-      padding: 10px 0;
-   }
-   div[data-refs-self*="kanban-w400"] > .block-children .block-content {
-      width:380px;
-   }
+        /* #kanban-w[100-300] : force width of the columns */
+
+            div[data-refs-self*="kanban-w100"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+                min-width: 100px;
+            }
+
+            div[data-refs-self*="kanban-w150"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+                min-width: 150px;
+            }
+
+            div[data-refs-self*="kanban-w200"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+                min-width: 200px;
+            }
+            div[data-refs-self*="kanban-w300"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+                min-width: 300px;
+       		}
+            div[data-refs-self*="kanban-w400"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+                min-width: 400px;
+            }
+            div[data-refs-self*="kanban-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+                min-width: 400px;
+                    width: max-content; 
+            }
+    /*--------------------------------------------- kanban end-- */
+
 
     `,)
 }
