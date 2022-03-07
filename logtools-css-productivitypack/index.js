@@ -208,7 +208,7 @@ function main () {
    /*----------------------------end of vismode icon component--*/
 
    /*===========================================================*/
-   /* numbered lists 0.3 20210605 */
+   /* numbered lists 0.3 20220307 */
    /* usage : tag parent block with #numlist */
 
       .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block {
