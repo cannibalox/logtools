@@ -1,8 +1,8 @@
 {
   "name": "logtools-css-productivitypack",
-  "author": "Phi",
-  "version": "0.0.1",
-  "description": "tag a block with: #.v-kanban #.v-eisenhower #.v-numlist",
+  "author": "CannibalOx",
+  "version": "0.0.4",
+  "description": "tag a block with: #.v-kanban #.v-eisenhower-matrix #.v-numlist #.v-gallery",
   "main": "./index.html",
   "logseq": {
     "id": "_DuynZ2rejh_logtools",
