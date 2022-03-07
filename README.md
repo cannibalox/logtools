@@ -27,4 +27,67 @@ Border `#.v-border-children`<br>
 * download the zip and unpack it in a folder of your choice.
 * in logseq, go to the main `menu > plugins`, then click on `Load unpacked plugin` and point it to the folder `logtools-css-productivitypack` (not the parent folder)
 
+# TEMPLATES
 
+use these starter templates to easily invoke the tools and tags. I usually save all my templates in a dedicated page called `ls-templates.md`
+### priority matrix : invoke with `/eisen`
+```
+- #.v-eisenhower-matrix
+  template:: eisenhower-matrix
+	- [[TODO]]
+		-
+		-
+		-
+	- [[DECIDE]]
+		-
+		-
+		-
+	- [[DELEGATE]]
+		-
+		-
+		-
+	- [[ELIMINATE]]
+		-
+		-
+		-
+```
+### kanbans, replace titles and catagories to your liking, invoke with `/kanban`
+```
+- a Kanban #.v-kanban
+  template:: kanban
+	- `TO DO`
+		- 1
+		- 2
+	- `IN PROGRESS`
+		- 1
+		- 2
+	- `DONE`
+		- 1
+		- 2
+- Wide Kanban #.v-kanban-wide
+  template:: kanban-wide
+	- `UNDER REVIEW`
+		- 1
+		- 2
+	- `RETAKE`
+		- 1
+		- 2
+	- `APPROVED`
+		- 1
+		- 2
+	- `ARCHIVED`
+		- 1
+		- 2
+	- `DROPPED`
+		- 1
+		- 2
+```
+### pros and cons / likes and dislike (used for reviews or comparisons, works well in conjunction with the #.v-kanban tags)
+```
+- procons #.v-kanban
+  template:: procons
+	- #like
+		-
+	- #dislike
+		-
+```
