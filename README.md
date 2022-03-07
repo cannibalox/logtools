@@ -23,7 +23,7 @@ Border `#.v-border-children`<br>
 <img src="https://user-images.githubusercontent.com/4605693/156955395-0004e961-4d18-4dc8-9621-8b4168c91b05.png" width="600px">
 
 Like-Dislike <br>
-<img src"https://user-images.githubusercontent.com/4605693/156959797-88fbfbeb-fd02-48fb-9e4e-6a72974a1f24.png" width="600px">
+<img src="https://user-images.githubusercontent.com/4605693/156959797-88fbfbeb-fd02-48fb-9e4e-6a72974a1f24.png" width="600px">
 
 # INSTALL
 
@@ -85,7 +85,7 @@ use these starter templates to easily invoke the tools and tags. I usually save 
 		- 1
 		- 2
 ```
-### pros and cons / likes and dislike (used for reviews or comparisons, works well in conjunction with the #.v-kanban tags)
+### pros and cons / like and dislike (used for reviews or comparisons, works well in conjunction with the #.v-kanban tags)
 ```
 - procons #.v-kanban
   template:: procons
