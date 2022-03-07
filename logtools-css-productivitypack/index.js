@@ -208,43 +208,53 @@ function main () {
    /*----------------------------end of vismode icon component--*/
 
    /*===========================================================*/
-   /* numbered lists 0.3 20210605                               */
-   /* usage : tag parent block with #numlist                    */
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block {
-            counter-increment: lvlNumber;
-      }
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>div>div>a>.bullet-container:before {
-            content: counters(lvlNumber, ".") ":";
-            position: absolute;
-            display: block;
-      }
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>.block-children>.ls-block {
-            counter-increment: sublvlNumber;
-      }
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>.block-children>.ls-block>div>div>a>.bullet-container:before {
-            content: counters(lvlNumber, ".") "." counters(sublvlNumber, ".") ":";
-            position: absolute;
-            display: block;
-            padding-right: 0.25em;
-            width: 40px;
-      }
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>.block-children>.ls-block>div>div>.block-control {
-            width: 30px !important;
-      }
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>.block-children>.ls-block>div>.block-content-wrapper {
-            padding-left: 0.25em
-      }
-         /* hide bullets */
-         .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>.block-children div .bullet-container:before {
-            content: "";
-         }
-         .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>div>div>a>.bullet-container>.bullet {
-            visibility: hidden;
-         }
+   /* numbered lists 0.3 20210605 */
+   /* usage : tag parent block with #numlist */
 
-      .ls-block[data-refs-self*="numlist"]>.block-children>.ls-block>.block-children>.ls-block>div>div>a>.bullet-container>.bullet {
-            visibility: hidden;
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block {
+         counter-increment: lvlNumber;
       }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>div>div>a>.bullet-container:before {
+         content: counters(lvlNumber, ".") ":";
+         position: absolute;
+         display: block;
+      }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block {
+         counter-increment: sublvlNumber;
+      }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block>div>div>a>.bullet-container:before {
+         content: counters(lvlNumber, ".") "." counters(sublvlNumber, ".") ":";
+         position: absolute;
+         display: block;
+         padding-right: 0.25em;
+         width: 40px;
+      }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block>div>div>.block-control {
+         width: 30px !important;
+      }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block>div>.block-content-wrapper {
+         padding-left: 0.25em
+      }
+
+      /* hide bullets */
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children div .bullet-container:before {
+         content: "";
+      }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>div>div>a>.bullet-container>.bullet {
+         visibility: hidden;
+      }
+
+      .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block>div>div>a>.bullet-container>.bullet {
+         visibility: hidden;
+      }
+
    /*------------------------------------end of numbered lists--*/
      
    /*===========================================================*/
