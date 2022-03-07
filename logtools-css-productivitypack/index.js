@@ -534,8 +534,8 @@ function main () {
          box-shadow: 2px 2px 3px #0000003b;
          border: 1px solid var(--ls-border-color);
          border-radius: var(--ls-border-radius-medium);
-         background-color: var(--ls-secondary-background-color);
-         margin: 0em 0em 0.2em 0 !important;
+         background-color: var(--ls-primary-background-color);
+         margin: 0em 0.5em 0.2em 1em !important;
          padding: 0.5em 1em 0.5em 0em !important;
 
       }
@@ -544,11 +544,9 @@ function main () {
          border: 1px solid var(--ls-border-color);
          border-radius: var(--ls-border-radius-low);
          background-color: var(--ls-tertiary-background-color);        
-         margin: 0.5em 0.25em !important;
-         padding: 0.5em 0em !important;
+         margin: 0.5em 1em 0.5em 0em !important;
+         padding: 0.15em 0em !important;
       }
-
-   /*==== ls-border end ====== */
 
     `);
 }
