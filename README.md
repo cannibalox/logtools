@@ -25,6 +25,9 @@ Border `#.v-border-children`<br>
 Like-Dislike <br>
 <img src="https://user-images.githubusercontent.com/4605693/156959797-88fbfbeb-fd02-48fb-9e4e-6a72974a1f24.png" width="600px">
 
+Numbered Lists : `#.v-numlist`
+<img src="https://user-images.githubusercontent.com/4605693/157914206-e1220ef0-e14e-47b8-8ded-d86aa5a422b8.png" width="600px">
+
 # INSTALL
 
 * download the zip and unpack it in a folder of your choice.
