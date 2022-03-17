@@ -23,20 +23,19 @@ jobs:
         id: build
         run: |
           mkdir ${{ env.PLUGIN_NAME }}
-          cp README.md package.json icon.png index.js index.html LICENSE ${{ env.PLUGIN_NAME }}
+          cp README.md package.json icon.png index.html index.js LICENSE ${{ env.PLUGIN_NAME }}
           zip -r ${{ env.PLUGIN_NAME }}.zip ${{ env.PLUGIN_NAME }}
           ls
           echo "::set-output name=tag_name::$(git tag --sort version:refname | tail -n 1)"
 
       - name: Create Release
+        uses: ncipollo/release-action@v1
         id: create_release
-        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ github.ref }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
+          allowUpdates: true
           draft: false
           prerelease: false
 
