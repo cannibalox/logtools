@@ -1,6 +1,6 @@
 # logtools - productivity pack :
 
-css-based tools and plugins for logseq 0.6.x packaged as an all-in-one plugin :
+a collection of css-based tools and plugins for Logseq :
 
 - Kanban : tag a block with `#.v-kanban` or `#.v-kanban-wide` (more samples here https://discuss.logseq.com/t/css-trigger-columns-kanban-view-with-tags/390) - - see the related Template below
 - Eisenhower Matrix : tag a block with `#.v-eisenhower` (https://discuss.logseq.com/t/css-template-eisenhower-matrix/526) - - see the related Template below
