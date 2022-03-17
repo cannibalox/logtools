@@ -1,11 +1,11 @@
 {
   "name": "LogTools",
   "author": "CannibalOx",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "description": "tag a block with: #.v-kanban #.v-eisenhower-matrix #.v-numlist #.v-gallery",
   "main": "./index.html",
   "logseq": {
     "id": "_DuynZ2rejh_logtools",
-    "icon": "./_DuynZ2rejh.png"
+    "icon": "icon.png"
   }
 }
