@@ -9,7 +9,9 @@ a collection of css-based tools and plugins for Logseq :
 - Gallery : tag a parent block with `#.v-gallery` and put links to images in separate children blocks (options: `-w100`, `-w200`, `-w300`,`-w400`, `-fit` to change the width, or add `-h300` or `-h400` to change the height, eg: `#.v-gallery-fit-h400`. by default the images are displayed as 200x200px)
 - Like-Dislike (Pro-Cons) : tag a bock with `#like` or `#dislike` for reviews or comparisons - see the related Template below
 
-tip : Try to combine the tags to uncover more possibilities :)
+tips : 
+- Try to combine the tags to uncover more possibilities :)
+- the css was packaged as a plugin in order to auto-update via the marketplace, however, the css rules could be used in `custom.css` (that's my prefererd way to use it as it works on my phone too)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O5O1BN89Y)
 
