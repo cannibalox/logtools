@@ -347,7 +347,7 @@ function main () {
    /*--------------------------------------------- kanban end-- */
 
    /*===========================================================*/
-   /* Gallery - flexrow wrap v20220304------------------------- */
+   /* Gallery - flexrow wrap v20220413------------------------- */
    /* - #.v-gallery : create image galleries, default 200x200px */
    /* options:                                                  */
    /*     width: -w100 ; -w200 ; -w300 ; -w400 ; -fit           */
@@ -420,7 +420,35 @@ function main () {
          div[data-refs-self*="-h400"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
                height: 400px !important;
          }
-      
+        div[data-refs-self*="-col"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            width: auto !important;
+            height: auto !important;
+         }
+        div[data-refs-self*="-col2"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col2"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            flex-basis: 50%;
+         }
+        div[data-refs-self*="-col3"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col3"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            flex-basis: 33%;
+         }
+        div[data-refs-self*="-col4"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col4"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            flex-basis: 25%;
+        }
+        div[data-refs-self*="-col5"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col5"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            flex-basis: 20%;
+        }
+        div[data-refs-self*="-col6"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col6"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            flex-basis: 16.6%;
+        }
+        div[data-refs-self*="-col7"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+        div[data-refs-self*="-col7"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+            flex-basis: 14.25%;
+        }
       /* remove left border and bullets for gallery */
          [data-refs-self*="gallery"] .block-children-left-border,
          [data-refs-self*="gallery"] .block-children-container.flex .bullet-container {
