@@ -347,13 +347,13 @@ function main () {
    /*--------------------------------------------- kanban end-- */
 
    /*===========================================================*/
-   /* Gallery - flexrow wrap v20220413------------------------- */
-   /* - #.v-gallery : create image galleries, default 200x200px */
+   /* Gallery - flexrow wrap v20220413------------------------ */
+   /* - #.v-gallery : create image galleries, default 200x200px */ 
    /* options:                                                  */
    /*     width: -w100 ; -w200 ; -w300 ; -w400 ; -fit           */
    /*     heighht: -h300; -h400 ; default height : 200px        */
    /* eg use #.v-gallery-fit-h300 to fit image widthx300px      */
-
+   
       div[data-refs-self*="gallery"]>.block-children-container.flex {
          width: 100%;
       }
@@ -380,88 +380,91 @@ function main () {
          height: 200px !important;
          width: 200px !important;
       }
+      /* #gallery-col[2-7] : force number of columns - better for pics with same width */      
+      div[data-refs-self*="-col"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         object-fit: cover ;
+         width: auto !important;
+         height: auto !important;
+      }
+      div[data-refs-self*="-col2"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col2"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         flex-basis: 50%;
+      }
+      div[data-refs-self*="-col3"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col3"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         flex-basis: 33%;
+      }
+      div[data-refs-self*="-col4"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col4"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         flex-basis: 25%;
+      }
+      div[data-refs-self*="-col5"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col5"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         flex-basis: 20%;
+      }
+      div[data-refs-self*="-col6"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col6"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         flex-basis: 18%;
+      }
+      div[data-refs-self*="-col7"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-col7"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         flex-basis: 15.5%;
+      }
       /* #gallery-w[100-300] : force width of the columns */
-         div[data-refs-self*="-w100"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-w100"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: 100px !important;
-         }
-         div[data-refs-self*="-w150"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-w150"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: 150px !important;
-         }
-         div[data-refs-self*="-w200"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-w200"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: 200px !important;
-         }
-         div[data-refs-self*="-w250"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-w250"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: 250px !important;
-         }
-         div[data-refs-self*="-w300"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-w300"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: 300px !important;
-         }
-         div[data-refs-self*="-w400"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-w400"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: 400px !important;
-         }
-         div[data-refs-self*="-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-               min-width: 200px !important;
-               width: max-content !important; 
-               object-fit: contain;
-         }
-      
-         div[data-refs-self*="-h300"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-h300"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-               height: 300px !important;
-         }
-         div[data-refs-self*="-h400"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-         div[data-refs-self*="-h400"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-               height: 400px !important;
-         }
-        div[data-refs-self*="-col"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            width: auto !important;
-            height: auto !important;
-         }
-        div[data-refs-self*="-col2"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col2"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            flex-basis: 50%;
-         }
-        div[data-refs-self*="-col3"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col3"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            flex-basis: 33%;
-         }
-        div[data-refs-self*="-col4"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col4"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            flex-basis: 25%;
-        }
-        div[data-refs-self*="-col5"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col5"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            flex-basis: 20%;
-        }
-        div[data-refs-self*="-col6"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col6"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            flex-basis: 16.6%;
-        }
-        div[data-refs-self*="-col7"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
-        div[data-refs-self*="-col7"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
-            flex-basis: 14.25%;
-        }
+      div[data-refs-self*="-w100"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-w100"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         width: 100px !important;
+      }
+      div[data-refs-self*="-w150"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-w150"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         width: 150px !important;
+      }
+      div[data-refs-self*="-w200"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-w200"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         width: 200px !important;
+      }
+      div[data-refs-self*="-w250"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-w250"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         width: 250px !important;
+      }
+      div[data-refs-self*="-w300"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-w300"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         width: 300px !important;
+      }
+      div[data-refs-self*="-w400"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-w400"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         width: 400px !important;
+      }
+      div[data-refs-self*="-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         min-width: 200px !important;
+         width: max-content !important; 
+         object-fit: contain;
+      }
+
+      div[data-refs-self*="-h300"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-h300"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         height: 300px !important;
+      }
+      div[data-refs-self*="-h400"]>.block-children-container.flex>.block-children.w-full>div.ls-block,
+      div[data-refs-self*="-h400"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+         height: 400px !important;
+      }
       /* remove left border and bullets for gallery */
-         [data-refs-self*="gallery"] .block-children-left-border,
-         [data-refs-self*="gallery"] .block-children-container.flex .bullet-container {
-            display: none;
-         }
+      [data-refs-self*="gallery"] .block-children-left-border,
+      [data-refs-self*="gallery"] .block-children-container.flex .bullet-container {
+         display: none;
+      }
 
-         [data-refs-self*="gallery"]>.block-children-container.flex .block-children-container.flex {
-            margin: 0px !important;
-            line-height: 0.2rem;
-            padding-bottom: 0;
-         }
+      [data-refs-self*="gallery"]>.block-children-container.flex .block-children-container.flex {
+         margin: 0px !important;
+         line-height: 0.2rem;
+         padding-bottom: 0;
+      }
 
-   /*-------------------------------------------- gallery end-- */
+   /*--------------------------------------------- gallery end-- */
+
 
    /*==== logseq-bars v20210307 start ====== */
       /* resets tag style */
