@@ -3,10 +3,21 @@
 a collection of css-based tools and plugins for Logseq :
 
 - Kanban : tag a block with `#.v-kanban` or `#.v-kanban-wide` (more samples here https://discuss.logseq.com/t/css-trigger-columns-kanban-view-with-tags/390) - - see the related Template below
+   - options: 
+        - `-w100`, `-w150`, `-w200`, `-w300`,`-w400` : adjust width of each column (fixed numbers in px)
+        - `-small` : smaller fonts to fit more columns
+        - `-wide` : force the use of full-width and horizontal scroll if needed
+    - examples: `#.v-gallery-fit-h400` or `#.v-gallery-col5`
 - Eisenhower Matrix : tag a block with `#.v-eisenhower` (https://discuss.logseq.com/t/css-template-eisenhower-matrix/526) - - see the related Template below
 - numeric lists : tag a block with `#.v-numlist` (https://discuss.logseq.com/t/css-numbered-lists/387/5)
 - border : tag a block with `#.v-self-border`; `#.v-border-child` or `#.v-self-border-child` to add a frame/border around blocks
-- Gallery : tag a parent block with `#.v-gallery` and put links to images in separate children blocks (options: `-w100`, `-w200`, `-w300`,`-w400`, `-fit` to change the width, or add `-h300` or `-h400` to change the height, eg: `#.v-gallery-fit-h400`. by default the images are displayed as 200x200px)
+- Gallery : tag a parent block with `#.v-gallery` and put links to images in separate children blocks (by default the images are displayed as 200x200px)
+    - options: 
+        - `-col2` to `-col7` : defnine the number of columns, images size will auto adjust
+        - `-w100`, `-w200`, `-w300`,`-w400` : adjust width of each pic (fixed numbers in px)
+        - `-fit` : fit width 
+        - `-h300` or `-h400` to change the height, default is 200px
+    - examples: `#.v-gallery-fit-h400` or `#.v-gallery-col5`
 - Like-Dislike (Pro-Cons) : tag a bock with `#like` or `#dislike` for reviews or comparisons - see the related Template below
 
 tips : 
