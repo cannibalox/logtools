@@ -1,5 +1,5 @@
 function main () {
-   logseq.provideStyle(`
+   logseq.provideStyle(String.raw`
     /* -- like dislike ----------------------------------------- */
 
         .ls-block[data-refs-self*="like"] .block-children .bullet-container .bullet {
