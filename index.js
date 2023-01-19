@@ -381,6 +381,20 @@ function main () {
          */
     /* --------------------------------------colorful indent end */
 
+    /* ===== columns =========================================== */
+        .ls-block[data-refs-self*="columns-2"]>.block-children-container.flex>.block-children.w-full {
+            column-count: 2;
+        }
+        .ls-block[data-refs-self*="columns-3"]>.block-children-container.flex>.block-children.w-full {
+            column-count: 3
+        }
+        .ls-block[data-refs-self*="columns-4"]>.block-children-container.flex>.block-children.w-full {
+            column-count: 4
+        }
+        .ls-block[data-refs-self*="columns-5"]>.block-children-container.flex>.block-children.w-full {
+            column-count: 5
+        }
+    /* ====================================columns end===========*/
 
     /*===========================================================*/
     /* WIP css eisenhower matrix by cannibalox v20220511 -------*/
