@@ -64,7 +64,7 @@ function main () {
 	        div[data-refs-self*="kanban"]>.block-children-container.flex>.block-children.w-full {
 	            display: inline-flex;
 	            position: relative;
-	            overflow-x: auto;
+	            overflow-x: auto !important;
 	            overflow-y: hidden;
 	            margin: 0 10px;
 	        }
@@ -85,7 +85,7 @@ function main () {
             left: 50%;
             transform: translate(-50%);
             background-color: var(--ls-primary-background-color);
-            overflow-x: scroll;
+            overflow-x: scroll !important;
             overflow-y: hidden;
             margin: 10px 30px;
         }
