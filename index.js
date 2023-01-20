@@ -636,10 +636,8 @@ function main () {
         } */
     /*----------------------------end of vismode icon component--*/
 
-
-
     /*===========================================================*/
-    /* numbered lists 0.3 20220307 */
+    /* numbered lists 0.4 20230120 */
     /* usage : tag parent block with #numlist */
 
         .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block {
@@ -650,7 +648,7 @@ function main () {
             content: counters(lvlNumber, ".") ":";
             position: absolute;
             display: block;
-            width: 20px;
+            text-align: end;
         }
 
         .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block {
@@ -661,12 +659,11 @@ function main () {
             content: counters(lvlNumber, ".") "." counters(sublvlNumber, ".") ":";
             position: absolute;
             display: block;
-            padding-right: 0.25em;
-            width: 40px;
+            padding-right: 0.25em;       
         }
 
         .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block>div>div>.block-control {
-            width: 30px !important;
+            width: 2rem !important;
         }
 
         .ls-block[data-refs-self*="numlist"]>.block-children-container.flex>.block-children>.ls-block>.block-children-container.flex>.block-children>.ls-block>div>.block-content-wrapper {
