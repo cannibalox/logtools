@@ -1,8 +1,8 @@
 {
-  "name": "LogTools",
+  "name": "LogTools (no colourful indent)",
   "author": "CannibalOx",
-  "version": "0.0.3",
-  "description": "tag a block with: #.v-kanban #.v-eisenhower-matrix #.v-numlist #.v-gallery",
+  "version": "0.1.1",
+  "description": "fork of logtools with no colorful indent. tag a block with: #.v-kanban #.v-eisenhower-matrix #.v-numlist #.v-gallery",
   "main": "./index.html",
   "logseq": {
     "id": "_DuynZ2rejh_logtools",
