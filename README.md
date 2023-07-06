@@ -91,7 +91,8 @@ tag a parent block with `#.v-gallery` and put links to images in separate childr
     - `-w100`, `-w200`, `-w300`,`-w400` : adjust width of each pic (fixed numbers in px)
     - `-fit` : fit width 
     - `-h300` or `-h400` to change the height, default is 200px
-  - demo: `#.v-gallery-fit-` 
+    - append these suffixes to the main tag, so for instance : `#.v-gallery-col5` creates a grid of 5 columns, `#.v-gallery-w300` creates a gallery where each pic is 300 pixels wide, etc
+  - demo: `#.v-gallery-fit` 
 <img src="https://user-images.githubusercontent.com/4605693/156956622-fc96e39a-4240-4c22-a4e2-a37cd7b75126.png" max-width="600px">
 
 ## Like-Dislike (Pro-Cons) 
