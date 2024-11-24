@@ -11,6 +11,7 @@ tag a block with `#.v-kanban` or `#.v-kanban-wide` (more samples here https://di
 demo: `#.v-kanban`<br>
 <img src="https://user-images.githubusercontent.com/4605693/156956422-9eab8cee-7fbb-4e65-81de-5097c1b96f89.png" max-width="600px">	
   - Kanban starter templates: replace the titles and catagories to your liking, invoke with `/kanban`
+
 	```
 	- a Kanban #.v-kanban
 	template:: kanban
